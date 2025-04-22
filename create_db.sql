@@ -11,7 +11,7 @@ CREATE TABLE Cuisine (
 
 CREATE TABLE InspectionType (
   InspectionTypeID INT AUTO_INCREMENT PRIMARY KEY,
-  TypeName         VARCHAR(100)
+  TypeName         VARCHAR(100),
   Description      VARCHAR(100)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -22,11 +22,9 @@ CREATE TABLE Action (
 
 CREATE TABLE Facility (
   FacilityID       INT AUTO_INCREMENT PRIMARY KEY,
-  RestaurantID     INT,
   LicenseNumber    VARCHAR(50),
   FacilityType     VARCHAR(100),
-  Risk             VARCHAR(50),
-  FOREIGN KEY (RestaurantID) REFERENCES Restaurant(RestaurantID)
+  Risk             VARCHAR(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 3. Address table
@@ -45,9 +43,7 @@ CREATE TABLE Address (
   BBL              VARCHAR(50),
   NTA              VARCHAR(50),
   Latitude         DOUBLE,
-  Longitude        DOUBLE,
-  GISLocation      POINT,
-  SPATIAL INDEX (GISLocation)
+  Longitude        DOUBLE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 4. Core entity: Restaurant
@@ -89,7 +85,7 @@ CREATE TABLE Inspection (
 
 CREATE TABLE Violation (
   ViolationID        INT AUTO_INCREMENT PRIMARY KEY,
-  InspectionID       VARCHAR(50),
+  InspectionID       INT,
   ViolationCode      VARCHAR(50),
   ViolationDescription TEXT,
   CriticalFlag       VARCHAR(50),
