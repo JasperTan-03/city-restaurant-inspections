@@ -1,0 +1,9 @@
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (1, 1, 1, '2024-08-27 00:00:00', 1);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (2, 2, 2, '2024-06-25 00:00:00', 2);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (3, 3, 3, '2022-08-09 00:00:00', 3);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (4, 4, 4, '2022-05-11 00:00:00', 1);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (5, 5, 4, '2022-12-12 00:00:00', 1);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (6, 6, 2, '2024-08-12 00:00:00', 4);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (7, 7, 4, '2023-06-15 00:00:00', 1);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (8, 8, 4, '2024-07-23 00:00:00', 1);
+INSERT INTO Inspection (InspectionID, RestaurantID, InspectionTypeID, InspectionDate, ActionID) VALUES (9, 9, 4, '2022-05-11 00:00:00', 1);
